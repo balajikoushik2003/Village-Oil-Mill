@@ -15,13 +15,13 @@
       overflow-x: hidden;
     }
     html {
-    scroll-behavior: smooth;
-  }
+      scroll-behavior: smooth;
+    }
     header {
       background-color: #2d3e50;
       color: white;
       text-align: center;
-          height: 120px
+      height: 120px;
       top: 0;
       z-index: 1000;
     }
@@ -30,122 +30,91 @@
       margin-bottom: 60px;
       font-size: 32px;
     }
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  
-}
-
-nav a {
-  color: #f1f1f1;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #ff9800;
-}
-
-    .navbar-logo-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-.intro-text {
-  color: black;
-  margin-left: 18rem;
-      margin-bottom: 2rem;
-}
-@media (max-width: 768px) {
-  .intro-text {
-    margin-left: 5rem;
-  }
-}
-@media (max-width: 480px) {
-  .intro-text {
-    margin-left: 1rem;
-  }
-}
-header {
-    background-color: #2d3e50;
-    color: white;
-
-    text-align: center;
-
-    height: 60px top: 0;
-    z-index: 1000;
-}
-
-.logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
- p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-margin-left:50px;
-    unicode-bidi: isolate;
-}
-.logo:hover {
-  transform: scale(1.05);
-}
-
-@media (max-width: 768px) {
-  .logo {
-    width: 50px;
-    height: 50px;
-  }
-
-  .navbar-logo-title h1 {
-    font-size: 1.4rem;
-    text-align: center;
-  }
-}
-.footerp {
-  color: grey;
-        font-size: 14px;
-}
-
-@media (max-width: 480px) {
-
-  .navbar-logo-title {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .logo {
-    width: 40px;
-    height: 40px;
-  }
-
-  .navbar-logo-title h1 {
-    font-size: 1.2rem;
-  }
-}
-
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
     nav a {
       color: #f1f1f1;
-      margin: 0 200px;
       text-decoration: none;
       font-weight: 600;
+      font-size: 1rem;
       transition: color 0.3s ease;
     }
     nav a:hover {
       color: #ff9800;
+    }
+    .navbar-logo-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .intro-text {
+      color: black;
+      margin-left: 18rem;
+      margin-bottom: 2rem;
+    }
+    @media (max-width: 768px) {
+      .intro-text {
+        margin-left: 5rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .intro-text {
+        margin-left: 1rem;
+      }
+    }
+    .logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    p {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      margin-left: 50px;
+      unicode-bidi: isolate;
+    }
+    .logo:hover {
+      transform: scale(1.05);
+    }
+    @media (max-width: 768px) {
+      .logo {
+        width: 50px;
+        height: 50px;
+      }
+      .navbar-logo-title h1 {
+        font-size: 1.4rem;
+        text-align: center;
+      }
+    }
+    .footerp {
+      color: grey;
+      font-size: 14px;
+    }
+    @media (max-width: 480px) {
+      .navbar-logo-title {
+        flex-direction: column;
+        gap: 8px;
+      }
+      .logo {
+        width: 40px;
+        height: 40px;
+      }
+      .navbar-logo-title h1 {
+        font-size: 1.2rem;
+      }
     }
     .hero {
       background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
@@ -162,7 +131,7 @@ margin-left:50px;
     }
     .hero p {
       font-size: 20px;
-          color: #f7f7f7;
+      color: #f7f7f7;
       margin: 15px 0 30px;
     }
     .btn {
@@ -178,11 +147,11 @@ margin-left:50px;
     .btn:hover {
       background: #e67e22;
     }
-p{
-    margin: 0;
-    font-size: 1.2rem;
-   color:#030303;
-}
+    p {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #030303;
+    }
     section {
       max-width: 1200px;
       margin: auto;
@@ -230,7 +199,6 @@ p{
       text-align: center;
       padding: 20px;
     }
-
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -243,21 +211,6 @@ p{
       from { opacity: 0; transform: translateX(-50px); }
       to { opacity: 1; transform: translateX(0); }
     }
- 
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes slideInLeft {
-      from { opacity: 0; transform: translateX(-50px); }
-      to { opacity: 1; transform: translateX(0); }
-    }
-
-
     @media (max-width: 768px) {
       header h1 {
         font-size: 1.6rem;
@@ -275,7 +228,6 @@ p{
         margin: 0 10px;
       }
     }
-
     @media (max-width: 480px) {
       .hero {
         padding: 12vh 15px;
@@ -291,15 +243,80 @@ p{
         font-size: 0.9rem;
       }
     }
+    /* New styles for About Us section */
+    .about-us-container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+    .about-us-image {
+      flex: 1;
+      min-width: 300px;
+    }
+    .about-us-image img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 50%;
+      border: 8px solid white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .about-us-content {
+      flex: 2;
+      min-width: 300px;
+    }
+    .about-us-content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-left: 0;
+    }
+    .vision-mission {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .vision, .mission {
+      flex: 1;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      min-width: 250px;
+    }
+    .vision h3, .mission h3 {
+      color: #ff9800;
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .vision p, .mission p {
+      font-size: 1rem;
+      color: #555;
+      margin-left: 0;
+    }
+    @media (max-width: 768px) {
+      .about-us-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .about-us-image img {
+        max-width: 250px;
+      }
+      .vision-mission {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="navbar-logo-title">
-        <img src="https://images.jdmagicbox.com/comp/raichur/d1/9999p8532.8532.220317213540.d4d1/catalogue/village-oil-mill-raichur-raichur-uas-raichur-oil-dealers-obg7gtxwd4.jpg" alt="Village Oil Mill Logo" class="logo">
-        <h1>Village Oil Mill | Amruth Naturals</h1>
-      </div>
-  
+      <img src="https://images.jdmagicbox.com/comp/raichur/d1/9999p8532.8532.220317213540.d4d1/catalogue/village-oil-mill-raichur-raichur-uas-raichur-oil-dealers-obg7gtxwd4.jpg" alt="Village Oil Mill Logo" class="logo">
+      <h1>Village Oil Mill | Amruth Naturals</h1>
+    </div>
     <nav>
       <a href="#about">About</a>
       <a href="#products">Products</a>
@@ -309,41 +326,38 @@ p{
 
   <div class="hero">
     <h2>Pure, Natural, Traditional</h2>
-  <p class="intro-text">Cold-pressed oils, millets, flours, chikkis, and more for a healthier you.</p>
-<p class="intro-text">Experience the goodness of nature with our range of products.</p>
-<p class="intro-text">Join us in promoting sustainable and healthy living.</p>
-<section id="about">
-<p class="intro-text">Discover the taste of tradition with Village Oil Mill.</p>
-
-
-    
-   
+    <p class="intro-text">Cold-pressed oils, millets, flours, chikkis, and more for a healthier you.</p>
+    <p class="intro-text">Experience the goodness of nature with our range of products.</p>
+    <p class="intro-text">Join us in promoting sustainable and healthy living.</p>
+    <p class="intro-text">Discover the taste of tradition with Village Oil Mill.</p>
     <a href="#products" class="btn">Explore Products</a>
-  
   </div>
 
-
+  <section id="about">
     <h2>About Us</h2>
+    <div class="about-us-container">
+      <div class="about-us-image">
+        <img src="https://images.jdmagicbox.com/comp/raichur/d1/9999p8532.8532.220317213540.d4d1/catalogue/village-oil-mill-raichur-raichur-uas-raichur-oil-dealers-gmavek00d0.jpg" alt="About Us Image">
+      </div>
+      <div class="about-us-content">
+        <p>
+          Village Oil Mill is dedicated to offering traditionally processed, chemical-free food products. Our cold-pressed oils, stone-ground flours, and ethically sourced millets and spices promote well-being and sustainability. Rooted in tradition and committed to purity, we are here to help you embrace natural living.
+        </p>
+        <div class="vision-mission">
+          <div class="vision">
+            <h3>🔍 Vision</h3>
+            <p>To enable businesses to thrive by offering cost-effective, scalable, and reliable solutions that eliminate operational complexities and financial barriers.</p>
+          </div>
+          <div class="mission">
+            <h3>🎯 Mission</h3>
+            <p>To be the trusted partner for businesses by delivering end-to-end office infrastructure solutions with flexibility, innovation, and exceptional service, allowing our clients to grow and achieve their goals seamlessly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        
-<section id="about">
-  <p class="intro-text">
-    At Village Oil Mill, we believe in the power of nature. Our products are crafted with care, using traditional methods that preserve the natural goodness of ingredients. We are committed to providing you with the highest quality oils, flours, and snacks that are free from chemicals and additives.
-  </p>
-
-  <p class="intro-text">
-    Our mission is to promote healthy living through natural foods. We source our ingredients from local farmers who share our values of sustainability and ethical practices. By choosing Village Oil Mill, you are not just nourishing your body; you are also supporting local communities and preserving traditional farming methods.
-  </p>
-    <p class="intro-text">
-    Village Oil Mill is dedicated to offering traditionally processed, chemical-free food products. Our cold-pressed oils, stone-ground flours, and ethically sourced millets and spices promote well‑being and sustainability. Rooted in tradition and committed to purity, we are here to help you embrace natural living.
-  </p>
-<section id="products">
-
-
-
-
-</section>
-
+  <section id="products">
     <h2>Our Products</h2>
     <div class="product-grid">
       <div class="product-card">
@@ -379,20 +393,17 @@ p{
     </div>
   </section>
 
-<section id="contact">
-  <h2>📞 Contact Us</h2>
-  <p>📧 Email: <a href="mailto:villageoilmillraichur@gmail.com">villageoilmillraichur@gmail.com</a></p>
-  <p>📱 Phone: 9986740765 / 8277823636</p>
-  <p>🌐 Website: <a href="http://www.villageoillmill.com">www.villageoillmill.com</a></p>
-  <p>📸 Instagram: <a href="https://www.instagram.com/villageoilmillraichur/" target="_blank">@villageoilmillraichur</a></p>
-  <p>📍 Address: Village Oil Mill, CIC, UAS Raichur, Karnataka - 584104</p>
-</section>
-
-
+  <section id="contact">
+    <h2>📞 Contact Us</h2>
+    <p>📧 Email: <a href="mailto:villageoilmillraichur@gmail.com">villageoilmillraichur@gmail.com</a></p>
+    <p>📱 Phone: 9986740765 / 8277823636</p>
+    <p>🌐 Website: <a href="http://www.villageoillmill.com">www.villageoillmill.com</a></p>
+    <p>📸 Instagram: <a href="https://www.instagram.com/villageoilmillraichur/" target="_blank">@villageoilmillraichur</a></p>
+    <p>📍 Address: Village Oil Mill, CIC, UAS Raichur, Karnataka - 584104</p>
+  </section>
 
   <footer>
-<p class="footerp">&copy; 2025 Village Oil Mill. All rights reserved.</p>
-
+    <p class="footerp">© 2025 Village Oil Mill. All rights reserved.</p>
   </footer>
 </body>
 </html>
