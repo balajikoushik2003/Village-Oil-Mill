@@ -317,6 +317,45 @@ body {
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
       min-width: 250px;
     }
+    /* Background for About Us and Products Sections */
+#about, #products {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('YOUR_IMAGE_URL') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff; /* Change text color to white for better contrast */
+  position: relative;
+}
+
+/* Ensure text in About Us content and product cards is readable */
+#about .about-us-content p, 
+#about .vision p, 
+#about .mission p, 
+#products .product-card p {
+  color: #f1f1f1; /* Light text color for readability */
+}
+
+/* Adjust product card background for better contrast */
+#products .product-card {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for product cards */
+}
+
+/* Adjust headings for better visibility */
+#about h2, #products h2 {
+  color: #ffffff; /* White headings for contrast */
+  border-bottom: 3px solid #ff9800;
+}
+
+/* Ensure vision and mission cards have a readable background */
+#about .vision, #about .mission {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #about, #products {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('YOUR_IMAGE_URL') no-repeat center center fixed;
+    background-size: cover;
+  }
+}
     .vision h3, .mission h3 {
       color: #ff9800;
       margin-top: 0;
