@@ -17,20 +17,34 @@ body {
     html {
       scroll-behavior: smooth;
     }
-    .promo-banner {
+.promo-banner {
   width: 100%;
   height: auto;
   text-align: center;
-  background-color: #f9f6f2; /* Light background to complement the banner */
+  background-color: #f9f6f2;
   padding: 20px 0;
 }
 
 .promo-banner img {
   max-width: 100%;
   height: auto;
-  border-radius: 12px; /* Rounded corners for a softer look */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+  /* Animation styles */
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeInScale 1.2s ease-out forwards;
 }
+
+/* Keyframes for fade and scale */
+@keyframes fadeInScale {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 
     header {
       background-color: #004d40;
