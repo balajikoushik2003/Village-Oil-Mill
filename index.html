@@ -84,11 +84,6 @@ body {
     }
     .menu-toggle {
   display: none;
-  font-size: 26px;
-  cursor: pointer;
-  color: white;
-  margin-left: auto;
-  margin-right: 15px;
 }
 
 /* Only for screens up to 420px */
@@ -120,7 +115,24 @@ body {
     border-top: 1px solid #00796b;
   }
 }
+.about-head {
+    color: #fff;
+    border-bottom: 3px solid #ff9800;
+    display: inline-block;
+    padding-bottom: 5px;
+    /* font-size: 28px; */
+    /* margin-left: 525px; */
+    animation: slideInLeft 1s ease-out;
+}
 
+@media (max-width: 420px) {
+    .about-head {
+        margin-left: 111px;
+        font-size: 24px;
+    }
+}
+
+    
     .intro-text {
       color: black;
       margin-left: 18rem;
@@ -136,12 +148,8 @@ body {
         margin-left: 1rem;
       }
     }
-    @media (max-width: 420px) {
-  .about-head {
-    margin-left: 20px;
-    font-size: 22px; 
-  }
-}
+
+
 
     .logo {
       width: 60px;
