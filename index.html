@@ -10,40 +10,15 @@
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
+  background: url('https://i.pinimg.com/736x/94/f1/3b/94f13b00bb54894240c74d709270150c.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: #ffff;
+  color: #333;
   overflow-x: hidden;
 }
+
     html {
       scroll-behavior: smooth;
     }
-.promo-banner {
-  width: 100%; 
-  height: auto;
-  text-align: center;
-  background-color: #f9f6f2;
-  padding: 20px 0;
-}
-
-.promo-banner img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
-  opacity: 0;
-  transform: scale(0.95);
-  animation: fadeInScale 1.2s ease-out forwards;
-}
-
-@keyframes fadeInScale {
-  to{
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-
     header {
       background-color: #004d40;
       color: white;
@@ -82,73 +57,6 @@ body {
       gap: 15px;
       flex-wrap: wrap;
     }
-    .menu-toggle {
-  display: none;
-}
-
-
-@media (max-width: 420px) {
-  nav {
-    display: none;
-    flex-direction: column;
-    background-color: #004d40;
-    padding: 10px;
-  }
-  nav.show {
-    display: flex;
-  }
-  .menu-toggle {
-    display: block;
-  }
-  .navbar-logo-title {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 10px;
-  }
-
-  nav a {
-    padding: 10px;
-    text-align: center;
-    color: white;
-    border-top: 1px solid #00796b;
-  }
-}
-.about-head {
-    color: #fff;
-    border-bottom: 3px solid #ff9800;
-    display: inline-block;
-    padding-bottom: 0.5rem;
-    font-size: 2rem; 
-    text-align: center;
-    animation: slideInLeft 1s ease-out;
-  margin-left:525px;
-}
-
-
-@media only screen and (min-width: 527px) and (max-width: 748px) {
-{
-    .about-head {
-        font-size: 1.75rem;
-    }
-}
-@media only screen and (min-width: 421px) and (max-width: 526px) {
-{
-    .about-head {
-        font-size: 1.5rem;
-    }
-}
- 
-@media (max-width: 420px) {
-    .about-head {
-        font-size: 1.25rem;
-        margin-left: 120px;
-    }
-}
-
-
-    
     .intro-text {
       color: black;
       margin-left: 18rem;
@@ -159,14 +67,11 @@ body {
         margin-left: 5rem;
       }
     }
-    @media (max-width: 420px) {
+    @media (max-width: 480px) {
       .intro-text {
         margin-left: 1rem;
       }
     }
-
-
-
     .logo {
       width: 60px;
       height: 60px;
@@ -184,17 +89,6 @@ body {
       margin-left: 50px;
       unicode-bidi: isolate;
     }
-
-    .product-description {
-  color: darkgreen;
-}
-
-    #about {
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-              url('https://media.istockphoto.com/id/1460439032/photo/phrase-about-us-with-magnifying-glass.jpg?s=612x612&w=0&k=20&c=ELrrhNdKE_TI2eiVJ20nkgeipr8tRhpUr5NdjdYV4xw=') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
-}
     .logo:hover {
       transform: scale(1.05);
     }
@@ -209,19 +103,11 @@ body {
       }
     }
     .footerp {
-      color: #ffffffd4;
+      color: grey;
       font-size: 14px;
     }
-  
-  @media (max-width: 480px) {
-    .navbar-logo-title {
-        flex-direction: column;
-        gap: 8px;
-    
-    }
-}    
-    
-    header h1 {
+    @media (max-width: 480px) {
+      header h1 {
     margin-top: 30px;
     margin-bottom: 30px;
       }
@@ -239,18 +125,14 @@ body {
         font-size: 1.2rem;
       }
     }
-
-    
-    
-
-
-  
-      #hero {
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-              url('https://www.shutterstock.com/image-photo/bagan-myanmar-burma-aug-21-600nw-2097252031.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
-}
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+      url('https://media.istockphoto.com/id/1441576651/photo/male-white-ox-pulling-an-oil-mill-used-to-grind-peanuts-producing-peanut-oil-in-myanmar-burma.jpg?s=612x612&w=0&k=20&c=XGJ63xXE7YSgdmRUc3Rm0CuDipo5-eyRGtkQMjz7RM0=') center/cover no-repeat;
+      padding: 300px;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      animation: fadeIn 2s ease-out;
+    }
     .hero h2 {
       color: #ceebff;
       font-size: 48px;
@@ -277,16 +159,13 @@ body {
     p {
       margin: 0;
       font-size: 1.2rem;
+      color: #030303;
     }
-     .contact-info {
-    color: #000000;
-  }
     section {
       max-width: 1200px;
       margin: auto;
       padding: 60px 20px;
     }
-
     h2 {
       color: #2b2b2b;
       border-bottom: 3px solid #ff9800;
@@ -316,6 +195,7 @@ body {
     }
     .product-card img {
       width: 100%;
+      height: 200px;
       border-radius: 8px;
       margin-bottom: 15px;
     }
@@ -377,7 +257,7 @@ body {
       display: inline-block;
       padding-bottom: 5px;
   font-size: 28px;
-    margin-left: 44px;
+    margin-left: 108px;
       animation: slideInLeft 1s ease-out;
     }          
       .hero {
@@ -438,71 +318,19 @@ body {
       min-width: 250px;
     }
 
-.product-card img {
-    width: 100%;
-    height: 140px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-
-.founder-section {
-  background-color: #f8f8f8;
-  padding: 50px 20px;
-  font-family: Arial, sans-serif;
-}
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  align-items: center;
-}
-
-.founder-image {
-  width: 250px;
-  border-radius: 50%;
-  border: 5px solid #4b8f3c;
-}
-
-.founder-text {
-  flex: 1;
-}
-
-.founder-text h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.founder-text p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
-}
-
-.contact-info {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #444;
-}
-
-.contact-info a {
-  color: #2b6e44;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
+#products {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('https://drive.google.com/uc?export=view&id=1i6Ev5TFlQ_fFGPNTKa6j_tVcoNDR5Zmg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff; /* White text for contrast */
+  position: relative;
 }
 
 
 
-.choose-text {
-  color: darkgreen;
-}
+
+
+
 
 
 #about .vision, #about .mission {
@@ -510,7 +338,12 @@ body {
 }
 
 
-
+@media (max-width: 768px) {
+  #about, #products {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('YOUR_IMAGE_URL') no-repeat center center fixed;
+    background-size: cover;
+  }
+}
     .vision h3, .mission h3 {
       color: #ff9800;
       margin-top: 0;
@@ -520,7 +353,7 @@ body {
     }
     .vision p, .mission p {
       font-size: 1rem;
-color: darkgreen;
+      color: #555;
       margin-left: 0;
     }
     @media (max-width: 768px) {
@@ -534,44 +367,21 @@ color: darkgreen;
       .vision-mission {
         flex-direction: column;
       }
-      
     }
-    .fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
- </style>
-
+  </style>
 </head>
 <body>
-<header>
-  <div class="navbar-logo-title">
-    <img
-      src="https://images.jdmagicbox.com/comp/raichur/d1/9999p8532.8532.220317213540.d4d1/catalogue/village-oil-mill-raichur-raichur-uas-raichur-oil-dealers-obg7gtxwd4.jpg"
-      alt="Village Oil Mill Logo"
-      class="logo"
-      onclick="window.location.href='/Village-Oil-Mill/'"
-      style="cursor: pointer;"
-    />
-    <h1>Village Oil Mill | Amruth Naturals</h1>
-  </div>
-<nav id="nav-links">
-
-    <a href="#about">About</a>
-    <a href="#whychooseus">Why Choose Us</a>
-    <a href="#products">Products</a>
-    <a href="page1/founder.html">Founder & Team</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
+  <header>
+    <div class="navbar-logo-title">
+      <img src="https://images.jdmagicbox.com/comp/raichur/d1/9999p8532.8532.220317213540.d4d1/catalogue/village-oil-mill-raichur-raichur-uas-raichur-oil-dealers-obg7gtxwd4.jpg" alt="Village Oil Mill Logo" class="logo">
+      <h1>Village Oil Mill | Amruth Naturals</h1>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
   <div class="hero">
     <h2>Pure, Natural, Traditional</h2>
@@ -582,8 +392,8 @@ color: darkgreen;
     <a href="#products" class="btn">Explore Products</a>
   </div>
 
-     <section id="about">
-    <h2 class="about-head">About Us</h2>
+  <section id="about">
+    <h2>About Us</h2>
     <div class="about-us-container">
       <div class="about-us-image">
         <img src="https://images.jdmagicbox.com/comp/raichur/d1/9999p8532.8532.220317213540.d4d1/catalogue/village-oil-mill-raichur-raichur-uas-raichur-oil-dealers-gmavek00d0.jpg" alt="About Us Image">
@@ -595,104 +405,61 @@ color: darkgreen;
         <div class="vision-mission">
           <div class="vision">
             <h3>🔍 Vision</h3>
-                <p>
-  • To be a trusted provider of pure, traditionally processed food products, fostering a healthier lifestyle through authenticity, sustainability, and ethical practices.<br>
-  • To revive and sustain indigenous food wisdom by integrating traditional practices with modern awareness for long-term wellness.
-</p>
-
+            <p>To enable businesses to thrive by offering cost-effective, scalable, and reliable solutions that eliminate operational complexities and financial barriers.</p>
           </div>
           <div class="mission">
             <h3>🎯 Mission</h3>
-            <p>
-              • To offer nutrient-rich, chemical-free oils, flours, spices, and millets.<br>
-              • To inspire wholesome living through traditional food choices.<br>
-              • To support local farmers by sourcing responsibly.<br>
-              • To uphold transparency and quality in every product.<br>
-              • To revive and promote ancient food processing techniques.
-            </p>
+            <p>To be the trusted partner for businesses by delivering end-to-end office infrastructure solutions with flexibility, innovation, and exceptional service, allowing our clients to grow and achieve their goals seamlessly.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-<section id="whychooseus">
-  <h2>Why Choose Us</h2>
-  <div class="product-grid">
-    <div class="product-card">
-      <img src="https://img.freepik.com/free-vector/100-natural-badge-collection_23-2148745259.jpg?semt=ais_hybrid&w=740" alt="100% Natural">
-      <h3>✅ 100% Natural</h3>
-      <p class="choose-text">No chemicals, no preservatives — just purity in every bite.</p>
-    </div>
-    <div class="product-card">
-      <img src="https://aurganicum.com/cdn/shop/articles/Untitled_design_13_1024x1024.png?v=1679576802">
-      <h3>🌾 Traditional Processing</h3>
-      <p class="choose-text">Wood-pressed oils & stone-ground flours preserve nutrients naturally.</p>
-    </div>
-    <div class="product-card">
-      <img src="https://media.istockphoto.com/id/1299012538/photo/2-sides-in-the-arena-at-meeting-siddanakolla-karnataka-india.jpg?s=612x612&w=0&k=20&c=XDvrodR9Ui_4HiX3yE5YKRczv1nxMNXypHCeLJGH3O0=" alt="Farmer Supported">
-      <h3>👨‍🌾 Farmer-Supported</h3>
-      <p class="choose-text">We source from local farmers and ensure fair trade practices.</p>
-    </div>
-    <div class="product-card">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIJnm7q7RkUUfYnj7zPXZLiTcIIVYZoINkwg&s">
-      <h3>💪 Health Benefits</h3>
-      <p class="choose-text">Our products aid digestion, boost immunity, and support overall wellness.</p>
-    </div>
-  </div>
-</section>
 
-<section class="promo-banner">
-  <img src="static/banner.png" alt="Traditional Food Banner">
-</section>
-
-
-
-
-<section id="products">
-  <h2>Our Products</h2>
-  <div class="product-grid">
-    <div class="product-card">
-      <img src="https://cdn.shopify.com/s/files/1/0587/0823/0318/files/589C5846-114D-43A3-80A8-EC7D5D212F0B_480x480.jpg?v=1669713873" alt="Cold-Pressed Oils">
-      <h3>Cold-Pressed Oils</h3>
-      <p class="product-description">Groundnut, Coconut, Safflower, Sesame – rich in nutrients and flavor.</p>
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://cdn.shopify.com/s/files/1/0587/0823/0318/files/589C5846-114D-43A3-80A8-EC7D5D212F0B_480x480.jpg?v=1669713873" alt="Cold-Pressed Oils">
+        <h3>Cold-Pressed Oils</h3>
+        <p>Groundnut, Coconut, Safflower, Sesame – rich in nutrients and flavor.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://cherrypick.city/cdn/shop/products/D.F._CHIKKI_300x300.jpg?v=1664853691" alt="Chikki">
+        <h3>Chikki</h3>
+        <p>Millet, Peanut, Sesame & Dry Fruit Chikkis – crunchy, healthy, traditional snacks.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaeM6kHCPJnKue_btyFcY7yeoBJkXxXzGQMw&s" alt="Spices">
+        <h3>Spices</h3>
+        <p>Pure Chilli, Turmeric, Pepper, Coriander & Garam Masala – aroma-packed and preservative-free.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://freshmills.in/cdn/shop/collections/flours-and-rava-728419.jpg?v=1717361441&width=1296" alt="Flours & Rawa">
+        <h3>Flours & Rawa</h3>
+        <p>Wheat, Ragi, Millet flours and rawa – stone-milled, wholesome and natural.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://t3.ftcdn.net/jpg/00/89/11/52/360_F_89115245_J8jR95ZAV6eQnYbbLNpkRLFZysV5rgr1.jpg" alt="Millets">
+        <h3>Millets</h3>
+        <p>Foxtail, Little, Kodo, Proso, Browntop – nutritious, gluten-free grains for modern diets.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://cdn.shopify.com/s/files/1/0587/0823/0318/files/589C5846-114D-43A3-80A8-EC7D5D212F0B_480x480.jpg?v=1669713873" alt="Other Products">
+        <h3>Other Products</h3>
+        <p>Pure Ghee, Peanut Butter, Salted & Masala Peanuts, Dried Onions – full of flavor and benefits.</p>
+      </div>
     </div>
-    <div class="product-card">
-      <img src="https://cherrypick.city/cdn/shop/products/D.F._CHIKKI_300x300.jpg?v=1664853691" alt="Chikki">
-      <h3>Chikki</h3>
-      <p class="product-description">Millet, Peanut, Sesame & Dry Fruit Chikkis – crunchy, healthy, traditional snacks.</p>
-    </div>
-    <div class="product-card">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaeM6kHCPJnKue_btyFcY7yeoBJkXxXzGQMw&s" alt="Spices">
-      <h3>Spices</h3>
-      <p class="product-description">Pure Chilli, Turmeric, Pepper, Coriander & Garam Masala – aroma-packed and preservative-free.</p>
-    </div>
-    <div class="product-card">
-      <img src="https://freshmills.in/cdn/shop/collections/flours-and-rava-728419.jpg?v=1717361441&width=1296" alt="Flours & Rawa">
-      <h3>Flours & Rawa</h3>
-      <p class="product-description">Wheat, Ragi, Millet flours and rawa – stone-milled, wholesome and natural.</p>
-    </div>
-    <div class="product-card">
-      <img src="https://t3.ftcdn.net/jpg/00/89/11/52/360_F_89115245_J8jR95ZAV6eQnYbbLNpkRLFZysV5rgr1.jpg" alt="Millets">
-      <h3>Millets</h3>
-      <p class="product-description">Foxtail, Little, Kodo, Proso, Browntop – nutritious, gluten-free grains for modern diets.</p>
-    </div>
-    <div class="product-card">
-      <img src="https://cdn.shopify.com/s/files/1/0587/0823/0318/files/589C5846-114D-43A3-80A8-EC7D5D212F0B_480x480.jpg?v=1669713873" alt="Other Products">
-      <h3>Other Products</h3>
-      <p class="product-description">Pure Ghee, Peanut Butter, Salted & Masala Peanuts, Dried Onions – full of flavor and benefits.</p>
-    </div>
-</section>
+  </section>
 
-
-<section id="contact">
-  <h2>📞 Contact Us</h2>
-  <p class="contact-info">📧 Email: <a href="mailto:villageoilmillraichur@gmail.com">villageoilmillraichur@gmail.com</a></p>
-  <p class="contact-info">📱 Phone: 9986740765 / 8277823636</p>
-<a class="whatsapp-btn" href="https://wa.me/919986740765" target="_blank">💬 <span style="margin-left: 8px;">Chat on WhatsApp</span></a>
-  <p class="contact-info">🌐 Website: <a href="http://www.villageoillmill.com">www.villageoillmill.com</a></p>
-  <p class="contact-info">📸 Instagotam: <a href="https://www.instagram.com/villageoilmillraichur/" target="_blank">@villageoilmillraichur</a></p>
-  <p class="contact-info">📍 Address: Village Oil Mill, CIC, UAS Raichur, Karnataka - 584104</p>
-</section>
+  <section id="contact">
+    <h2>📞 Contact Us</h2>
+    <p>📧 Email: <a href="mailto:villageoilmillraichur@gmail.com">villageoilmillraichur@gmail.com</a></p>
+    <p>📱 Phone: 9986740765 / 8277823636</p>
+    <p>🌐 Website: <a href="http://www.villageoillmill.com">www.villageoillmill.com</a></p>
+    <p>📸 Instagram: <a href="https://www.instagram.com/villageoilmillraichur/" target="_blank">@villageoilmillraichur</a></p>
+    <p>📍 Address: Village Oil Mill, CIC, UAS Raichur, Karnataka - 584104</p>
+  </section>
 
   <footer>
     <p class="footerp">© 2025 Village Oil Mill. All rights reserved.</p>
