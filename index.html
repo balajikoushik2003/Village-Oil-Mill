@@ -367,43 +367,50 @@ body {
         flex-direction: column;
       }
     }
-.hero1 {
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-  url('static/banner.png') center/cover no-repeat;
-  height: 400px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.why-choose-us {
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
 }
 
-.hero1 h2 {
+.why-text h2 {
   font-size: 2.5rem;
+  margin-left: 20px;
   margin-bottom: 10px;
 }
 
-.hero1 p {
+.why-text p {
   font-size: 1.2rem;
   max-width: 800px;
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-  .hero1 {
-    height: auto;
-    padding: 40px 20px;
-  }
+/* Banner-style image after text */
+.why-image {
+  margin-top: 30px;
+  height: 300px;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('static/banner.png') center/cover no-repeat;
+  border-radius: 10px;
+}
 
-  .hero1 h2 {
+/* Responsive styling */
+@media (max-width: 768px) {
+  .why-text h2 {
     font-size: 2rem;
   }
 
-  .hero1 p {
+  .why-text p {
     font-size: 1rem;
   }
+
+  .why-image {
+    height: 200px;
+  }
 }
+
+
+
 
   </style>
 </head>
@@ -459,12 +466,14 @@ body {
       </div>
     </div>
   </section>
-<section class="hero1">
-  <div>
+<section class="why-choose-us">
+  <div class="why-text">
     <h2>Why Choose Us</h2>
     <p>Experience purity and tradition with every product. We use age-old methods to ensure top quality and maximum nutrition.</p>
   </div>
+  <div class="why-image"></div>
 </section>
+
 
 
   <section id="products">
