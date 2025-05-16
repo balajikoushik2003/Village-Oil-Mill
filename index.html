@@ -330,6 +330,28 @@ body {
       min-width: 250px;
     }
 
+.about-heading {
+  color: white;
+  font-size: 28px;
+  text-decoration: underline;
+  text-decoration-color: black;
+  text-underline-offset: 2px;  
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-heading {
+    font-size: 20px;
+  }
+}
 
 
 
@@ -451,7 +473,8 @@ body {
   </div>
 
   <section id="about">
-    <h2>About Us</h2>
+<h2 class="about-heading">About Us</h2>
+
     <div class="about-us-container">
       <div class="about-us-image">
         <img src="https://images.jdmagicbox.com/comp/raichur/d1/9999p8532.8532.220317213540.d4d1/catalogue/village-oil-mill-raichur-raichur-uas-raichur-oil-dealers-gmavek00d0.jpg" alt="About Us Image">
